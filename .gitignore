@@ -29,6 +29,7 @@ media
 *$py.class 
 
 # Distribution / packaging 
+myenv/
 .Python build/ 
 develop-eggs/ 
 dist/ 

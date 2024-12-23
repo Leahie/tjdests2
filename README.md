@@ -24,3 +24,8 @@ GNU Affero General Public License for more details.
 
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+# Key Facts 
+1) Create your own copy of secrets.py in the settings folder 
+2) This is created in Python version 3.9
+3) In order to add all the colleges run python file import_ceeb.py in the commands folder with colleges_2022.csv in the data folder

@@ -3,7 +3,7 @@ import csv
 
 from django.core.management.base import BaseCommand
 
-from ...models import College
+from tjdests.apps.destinations.models import College
 
 
 class Command(BaseCommand):

@@ -47,7 +47,7 @@ class DestinationsTest(TJDestsTestCase):
         self.assertIn("ED", response.content.decode("UTF-8"))
         self.assertIn("fa-check", response.content.decode("UTF-8"))
 
-        # Add another user, but add us a name first
+        # Add another user, but add as a name first
         user.first_name = "Angela"
         user.last_name = "William"
         user.save()
