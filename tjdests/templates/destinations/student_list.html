@@ -6,6 +6,7 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
+    <!-- Filter Statement -->
     <h2>Student Destinations</h2>
 
     <p><b>Note</b>: All data is self-reported. We do not make any claim as to the accuracy of this data.</p>
@@ -49,7 +50,6 @@
     
     <!-- Filtering -->
     <div class="container pb-3">
-        <!-- Filter Button -->
         <div class="d-flex justify-content-between align-items-center mb-3">
             <h5>Filter Options</h5>
             <button type="button" class="btn btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#filterBar" aria-expanded="false" aria-controls="filterBar">
@@ -60,12 +60,10 @@
         <!-- Collapsible Filter Bar -->
         <div class="collapse pb-3" id="filterBar">
             <form method="get" class="border p-3 rounded bg-light">
-                <!-- Django Form Rendering -->
                 <div class="row g-3">
                     {% csrf_token %}
                     {{ form|crispy }} 
                 </div>
-                <!-- Submit Button -->
                 <div class="d-flex justify-content-end mt-3">
                     <button type="submit" class="btn btn-primary">
                         <i class="fas fa-search"></i> Apply Filters

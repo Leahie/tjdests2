@@ -127,6 +127,7 @@ class StudentDestinationListView(
             get_object_or_404(College, id=college_id) if college_id else None
         )
 
+        # Sending Context for Filter Message
         context["DECISION"] = ', '.join(self.request.GET.getlist("decision", []))
         context["ADMISSION"] = ', '.join(self.request.GET.getlist("admission", []))
         context["search_query"] = self.request.GET.get("q", None)
